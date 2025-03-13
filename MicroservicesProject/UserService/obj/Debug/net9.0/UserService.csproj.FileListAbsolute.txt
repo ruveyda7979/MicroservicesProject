@@ -152,3 +152,9 @@ C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesPro
 C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\UserService\obj\Debug\net9.0\UserService.pdb
 C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\UserService\obj\Debug\net9.0\UserService.genruntimeconfig.cache
 C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\UserService\obj\Debug\net9.0\ref\UserService.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\UserService\bin\Debug\net9.0\Shared.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\UserService\bin\Debug\net9.0\Shared.pdb
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\UserService\obj\Debug\net9.0\UserService.sourcelink.json
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\UserService\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\UserService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\UserService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

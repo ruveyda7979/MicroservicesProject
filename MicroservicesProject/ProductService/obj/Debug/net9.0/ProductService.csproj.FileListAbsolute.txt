@@ -152,3 +152,9 @@ C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesPro
 C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\ProductService\obj\Debug\net9.0\ProductService.pdb
 C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\ProductService\obj\Debug\net9.0\ProductService.genruntimeconfig.cache
 C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\ProductService\obj\Debug\net9.0\ref\ProductService.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\ProductService\bin\Debug\net9.0\Shared.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\ProductService\bin\Debug\net9.0\Shared.pdb
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\ProductService\obj\Debug\net9.0\ProductService.sourcelink.json
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\ProductService\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\ProductService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\ProductService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

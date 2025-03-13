@@ -152,3 +152,9 @@ C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesPro
 C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\OrderService\obj\Debug\net9.0\OrderService.pdb
 C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\OrderService\obj\Debug\net9.0\OrderService.genruntimeconfig.cache
 C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\OrderService\obj\Debug\net9.0\ref\OrderService.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\OrderService\bin\Debug\net9.0\Shared.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\OrderService\bin\Debug\net9.0\Shared.pdb
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\OrderService\obj\Debug\net9.0\OrderService.sourcelink.json
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\OrderService\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\OrderService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ASUS\Documents\SmartAPIManagerNew\MicroservicesProject\MicroservicesProject\OrderService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

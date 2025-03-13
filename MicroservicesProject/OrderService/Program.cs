@@ -1,41 +1,71 @@
+using OrderService.Services;
+using System;
+using Microsoft.EntityFrameworkCore;
+using OrderService.Data;
+using OrderService.Repositories;
+using OrderService.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// Add services to the container
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
+
+// Register DbContext
+builder.Services.AddDbContext<OrderDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Register repositories
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
+
+
+// HttpClient for ProductService
+builder.Services.AddHttpClient<ProductHttpClient>(client =>
+{
+    
+    string baseUrl = builder.Environment.IsDevelopment()
+        ? "https://localhost:5154" // Update this with your actual port
+        : "http://productservice:8080";
+    
+    client.BaseAddress = new Uri(baseUrl);
+});
+
+
+//HttpClient for UserService
+builder.Services.AddHttpClient<UserHttpClient>(client =>
+{
+    
+    string baseUrl = builder.Environment.IsDevelopment()
+        ? "https://localhost:5283" 
+        : "http://userservice:8080"; // Docker service name
+
+    client.BaseAddress = new Uri(baseUrl);
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-    {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast");
+app.UseCors("AllowAll");
+app.UseAuthorization();
+app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
